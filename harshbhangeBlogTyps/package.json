@@ -1,0 +1,15 @@
+{
+  "name": "@harshbhange0/blogts-types",
+  "version": "1.0.3",
+  "main": "dist/index.js",
+  "scripts": {
+    "deploy": "tsc -b & npm publish"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "zod": "^3.22.4"
+  }
+}
