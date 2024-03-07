@@ -33,6 +33,7 @@ export interface PostTypes {
   createdAt?: string;
   updatedAt?: string;
   author: authorInfo;
+  published?: boolean;
   type?: "normal-post" | "update-post";
 }
 export type PostsTypes = PostTypes[];
