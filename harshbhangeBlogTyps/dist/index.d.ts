@@ -46,15 +46,18 @@ export type RegisterInputs = z.infer<typeof registerSchema>;
 export type LogInInputs = z.infer<typeof logInSchema>;
 export type CreateBlogInputs = z.infer<typeof createBlog>;
 export type UpdateBlogInputs = z.infer<typeof updateBlog>;
+export interface authorInfo {
+    id: string;
+    name: string;
+    email: string;
+}
 export interface PostTypes {
     id: string;
     title: string;
     content: string;
     createdAt?: string;
     updatedAt?: string;
-    authorId?: string;
-    authorEmail?: string;
-    authorName?: string;
+    author: authorInfo;
     type?: "normal-post" | "update-post";
 }
 export type PostsTypes = PostTypes[];
