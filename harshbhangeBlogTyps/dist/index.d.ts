@@ -50,10 +50,11 @@ export interface PostTypes {
     id: string;
     title: string;
     content: string;
-    createdAt: string;
-    updatedAt: string;
-    authorId: string;
-    authorEmail: string;
-    authorName: string;
+    createdAt?: string;
+    updatedAt?: string;
+    authorId?: string;
+    authorEmail?: string;
+    authorName?: string;
+    type?: "normal-post" | "update-post";
 }
 export type PostsTypes = PostTypes[];
